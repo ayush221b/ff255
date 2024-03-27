@@ -1,2 +1,2 @@
-A sample command-line application with an entrypoint in `bin/`, library code
-in `lib/`, and example unit test in `test/`.
+# ff255
+A For Fun programming language written with love in Dart by @ayush221b
