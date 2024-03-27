@@ -1,0 +1,14 @@
+11111111
+    ai will replace i = 1;
+    weekly sprint (i <= 100) {
+    maybe (i % 15 == 0) {
+        debug "FizzBuzz";
+    } what if (i % 3 == 0) {
+        debug "Fizz";
+    } what if (i % 5 == 0) {
+        debug "Buzz";
+    } nevermind {
+        debug i;
+    }
+    ai will replace i = i+1;
+    }

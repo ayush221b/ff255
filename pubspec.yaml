@@ -1,0 +1,19 @@
+name: ff255 
+description: A For Fun programming language written with love in Dart by @ayush221b
+version: 0.0.1
+homepage: https://github.com/ayush221b/ff255
+repository: https://github.com/ayush221b/ff255
+
+environment:
+  sdk: '>=2.18.0 <4.0.0'
+
+# Add regular dependencies here.
+dependencies:
+  args: 2.4.2
+
+dev_dependencies:
+  lints: ^2.0.0
+  test: ^1.21.0
+
+executables:
+  ff255: ff255
