@@ -27,7 +27,7 @@ dart pub global activate ff255
 <h4 align="left">Run</h4>
 
 ```
-ff255 program.ff255
+ff255 -f program.ff255
 ```
 
 <h4 align="left">Output</h4>
