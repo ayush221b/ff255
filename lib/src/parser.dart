@@ -66,12 +66,6 @@ class Parser {
       }
 
       return ConditionalNode(blocks);
-    } else if (_tryMatch(TokenType.missedDeadlineAgain) &&
-        currentLoop != null) {
-      return ContinueNode();
-    } else if (_tryMatch(TokenType.unrealisticExpectation) &&
-        currentLoop != null) {
-      return BreakNode();
     }
 
     return _parseExpressionStatement(); // Handle expression statements
@@ -233,7 +227,7 @@ class Parser {
       return StringNode(stringValue);
     }
 
-    throw Exception('Unexpected token: ${_tokens[_current].type}');
+    throw Exception('Unexpected token: ${_tokens[_current].type} $_current');
   }
 
   bool _tryMatch(TokenType type) {

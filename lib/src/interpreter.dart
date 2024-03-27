@@ -47,23 +47,10 @@ class Interpreter implements Visitor<dynamic> {
   dynamic visitLoopStmtExpr(LoopNode stmt) {
     while (_evaluate(stmt.condition)) {
       for (Stmt bodyStmt in stmt.body) {
-        dynamic result = _execute(bodyStmt);
-
-        if (result == ContinueNode.type) continue;
-        if (result == BreakNode.type) break;
+        _execute(bodyStmt);
       }
     }
     return null;
-  }
-
-  @override
-  dynamic visitBreakStmtExpr(BreakNode stmt) {
-    return BreakNode.type;
-  }
-
-  @override
-  dynamic visitContinueStmtExpr(ContinueNode stmt) {
-    return ContinueNode.type;
   }
 
   // Visits a Conditional Statements Expression

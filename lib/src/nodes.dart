@@ -14,8 +14,6 @@ abstract class Visitor<T> {
   T visitAssignmentExpr(AssignmentNode stmt);
   T visitConditionalStmtExpr(ConditionalNode stmt);
   T visitLoopStmtExpr(LoopNode stmt);
-  T visitBreakStmtExpr(BreakNode stmt);
-  T visitContinueStmtExpr(ContinueNode stmt);
   T visitDebugStmtExpr(DebugNode stmt);
   T visitExpressionStmtExpr(ExpressionStmt stmt);
   T visitUnaryExpr(UnaryOpNode expr);
@@ -135,24 +133,6 @@ class LoopNode extends Stmt {
   @override
   dynamic accept<T>(Visitor<T> visitor) {
     return visitor.visitLoopStmtExpr(this);
-  }
-}
-
-class BreakNode extends Stmt {
-  static final type = BreakNode();
-
-  @override
-  dynamic accept<T>(Visitor<T> visitor) {
-    return visitor.visitBreakStmtExpr(this);
-  }
-}
-
-class ContinueNode extends Stmt {
-  static final type = ContinueNode();
-
-  @override
-  dynamic accept<T>(Visitor<T> visitor) {
-    return visitor.visitContinueStmtExpr(this);
   }
 }
 
