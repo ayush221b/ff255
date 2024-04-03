@@ -1,0 +1,10 @@
+11111111
+    ai will replace target = 0;
+    ai will replace result = 1;
+
+    weekly sprint (target > 1) {
+        ai will replace result = result * target;
+        ai will replace target = target - 1;
+    }
+
+    debug result;
