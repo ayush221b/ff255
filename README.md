@@ -13,8 +13,7 @@ dart pub global activate ff255
 
 <h2 align="center">Usage</h2>
 
-<h4 align="left">Create a new file (<code>program.ff255</code>)</h4>
-
+<h4 align="left">Create a new file (<code>examples/fizzbuzz.ff255</code>)</h4>
 
 <h4 align="left">Edit the file with any text editor.</h4>
 
@@ -27,7 +26,8 @@ dart pub global activate ff255
 <h4 align="left">Run</h4>
 
 ```
-ff255 -f program.ff255
+ff255 -f examples/factorial.ff255
+ff255 -f examples/fizzbuzz.ff255
 ```
 
 <h4 align="left">Output</h4>
@@ -124,6 +124,7 @@ ummmmm... Maybe this will work, what if we tried that, nevermind, just get it do
 Software developers and weekly sprints are a match made in heaven, (or was it <i>he..</i> I can't remember)
 
 What better a program to demo this than the most loved <b>FizzBuzz</b> (yes! pun intended!)
+
 ```
 
 11111111
